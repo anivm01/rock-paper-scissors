@@ -1,5 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* ## Colors
@@ -30,11 +32,52 @@
     --score-text: hsl(229, 64%, 46%);
     --header-outline: hsl(217, 16%, 45%);
     --radial-gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+    --offwhite-color: #f9f9f9;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background: radial-gradient(circle at top, var(--radial-gradient));
     min-height: 100vh;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 600;
+}
+
+.header {
+    border: 2px solid var(--header-outline);
+    border-radius: 35px;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--offwhite-color);
+}
+
+.header__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.header__score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--offwhite-color);
+    color: var(--score-text);
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+}
+
+.header__label {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.header__score {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--score-text);
 }

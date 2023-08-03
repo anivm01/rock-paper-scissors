@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("./fonts/BarlowSemiCondensed-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("./fonts/BarlowSemiCondensed-SemiBold.ttf");
+    font-weight: 600;
+}
